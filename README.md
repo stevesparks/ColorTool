@@ -17,7 +17,7 @@ Based on the instructions in the input file, it will create output files of the 
 {
     "name":"SampleCorp Colors",
     "output":{
-        "dir":"/Users/barbecuesteve/Code/SOG/ColorTool",
+        "dir":".",
         "writers":{
             "objc":{
                 "class":"SCColor",
