@@ -7,11 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
+#import "ColorList.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSString *fileName = @"samplecolors.json";
+        if(argc>1) {
+            fileName = [NSString stringWithCString:argv[1] encoding:NSUTF8StringEncoding];
+        }
+        NSLog(@"Opening %@...", fileName);
+
+        ColorList *list = [[ColorList alloc] initWithContentsOfFile:fileName format:ColorListInputFormatJSON];
+        [list write];
     }
     return 0;
 }
+

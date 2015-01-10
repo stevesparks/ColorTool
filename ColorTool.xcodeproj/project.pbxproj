@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0E467B101A6045AD00BA35F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E467B0F1A6045AD00BA35F6 /* main.m */; };
+		0E467B181A60465200BA35F6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E467B161A60465200BA35F6 /* AppKit.framework */; };
+		0E467B191A60465200BA35F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E467B171A60465200BA35F6 /* Foundation.framework */; };
+		0E467B231A6056F500BA35F6 /* ColorList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E467B221A6056F500BA35F6 /* ColorList.m */; };
+		0E467B271A60676200BA35F6 /* ColorListOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E467B261A60676200BA35F6 /* ColorListOutput.m */; };
+		0E467B2A1A60684700BA35F6 /* ColorListCLROutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E467B291A60684700BA35F6 /* ColorListCLROutput.m */; };
+		0E467B2F1A60692000BA35F6 /* ColorListJSONInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E467B2E1A60692000BA35F6 /* ColorListJSONInput.m */; };
+		0E467B321A606E0500BA35F6 /* ColorListObjcOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E467B311A606E0500BA35F6 /* ColorListObjcOutput.m */; };
+		0EAFD16F1A61691A00FC2C08 /* ColorListInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAFD16E1A61691A00FC2C08 /* ColorListInput.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,21 @@
 /* Begin PBXFileReference section */
 		0E467B0C1A6045AD00BA35F6 /* ColorTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ColorTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E467B0F1A6045AD00BA35F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E467B161A60465200BA35F6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0E467B171A60465200BA35F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0E467B1A1A60485200BA35F6 /* samplecolors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = samplecolors.json; sourceTree = "<group>"; };
+		0E467B211A6056F500BA35F6 /* ColorList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorList.h; sourceTree = "<group>"; };
+		0E467B221A6056F500BA35F6 /* ColorList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorList.m; sourceTree = "<group>"; };
+		0E467B251A60676200BA35F6 /* ColorListOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorListOutput.h; sourceTree = "<group>"; };
+		0E467B261A60676200BA35F6 /* ColorListOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorListOutput.m; sourceTree = "<group>"; };
+		0E467B281A60684700BA35F6 /* ColorListCLROutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorListCLROutput.h; sourceTree = "<group>"; };
+		0E467B291A60684700BA35F6 /* ColorListCLROutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorListCLROutput.m; sourceTree = "<group>"; };
+		0E467B2C1A6068E500BA35F6 /* ColorListInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorListInput.h; sourceTree = "<group>"; };
+		0E467B2D1A60692000BA35F6 /* ColorListJSONInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorListJSONInput.h; sourceTree = "<group>"; };
+		0E467B2E1A60692000BA35F6 /* ColorListJSONInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorListJSONInput.m; sourceTree = "<group>"; };
+		0E467B301A606E0500BA35F6 /* ColorListObjcOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorListObjcOutput.h; sourceTree = "<group>"; };
+		0E467B311A606E0500BA35F6 /* ColorListObjcOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorListObjcOutput.m; sourceTree = "<group>"; };
+		0EAFD16E1A61691A00FC2C08 /* ColorListInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorListInput.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E467B181A60465200BA35F6 /* AppKit.framework in Frameworks */,
+				0E467B191A60465200BA35F6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +66,8 @@
 		0E467B031A6045AD00BA35F6 = {
 			isa = PBXGroup;
 			children = (
+				0E467B161A60465200BA35F6 /* AppKit.framework */,
+				0E467B171A60465200BA35F6 /* Foundation.framework */,
 				0E467B0E1A6045AD00BA35F6 /* ColorTool */,
 				0E467B0D1A6045AD00BA35F6 /* Products */,
 			);
@@ -57,9 +84,38 @@
 		0E467B0E1A6045AD00BA35F6 /* ColorTool */ = {
 			isa = PBXGroup;
 			children = (
+				0E467B211A6056F500BA35F6 /* ColorList.h */,
+				0E467B221A6056F500BA35F6 /* ColorList.m */,
+				0E467B2B1A6068B900BA35F6 /* Readers */,
+				0E467B241A60674000BA35F6 /* Writers */,
 				0E467B0F1A6045AD00BA35F6 /* main.m */,
+				0E467B1A1A60485200BA35F6 /* samplecolors.json */,
 			);
 			path = ColorTool;
+			sourceTree = "<group>";
+		};
+		0E467B241A60674000BA35F6 /* Writers */ = {
+			isa = PBXGroup;
+			children = (
+				0E467B251A60676200BA35F6 /* ColorListOutput.h */,
+				0E467B261A60676200BA35F6 /* ColorListOutput.m */,
+				0E467B281A60684700BA35F6 /* ColorListCLROutput.h */,
+				0E467B291A60684700BA35F6 /* ColorListCLROutput.m */,
+				0E467B301A606E0500BA35F6 /* ColorListObjcOutput.h */,
+				0E467B311A606E0500BA35F6 /* ColorListObjcOutput.m */,
+			);
+			name = Writers;
+			sourceTree = "<group>";
+		};
+		0E467B2B1A6068B900BA35F6 /* Readers */ = {
+			isa = PBXGroup;
+			children = (
+				0E467B2C1A6068E500BA35F6 /* ColorListInput.h */,
+				0EAFD16E1A61691A00FC2C08 /* ColorListInput.m */,
+				0E467B2D1A60692000BA35F6 /* ColorListJSONInput.h */,
+				0E467B2E1A60692000BA35F6 /* ColorListJSONInput.m */,
+			);
+			name = Readers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E467B271A60676200BA35F6 /* ColorListOutput.m in Sources */,
 				0E467B101A6045AD00BA35F6 /* main.m in Sources */,
+				0E467B2A1A60684700BA35F6 /* ColorListCLROutput.m in Sources */,
+				0E467B2F1A60692000BA35F6 /* ColorListJSONInput.m in Sources */,
+				0E467B321A606E0500BA35F6 /* ColorListObjcOutput.m in Sources */,
+				0EAFD16F1A61691A00FC2C08 /* ColorListInput.m in Sources */,
+				0E467B231A6056F500BA35F6 /* ColorList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +294,7 @@
 				0E467B151A6045AD00BA35F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
