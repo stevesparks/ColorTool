@@ -1,0 +1,23 @@
+{
+    "name":"SampleCorp Colors",
+    "output":{
+        "dir":"/Users/barbecuesteve/Code/SOG/ColorTool",
+        "writers":{
+            "objc":{
+                "class":"SCColor",
+                "platform":"ios"
+            },
+            "clr":{
+                "file":"SampleColors.clr"
+            }
+        }
+    },
+    "colors":[
+              { "name":"Super white",  "hex":"#ffffff" },
+              { "name":"Super black",  "hex":"#000000" },
+              { "name":"random color", "red":0.88, "green":0.55, "blue":0.283 }
+    ]
+}
+
+
+

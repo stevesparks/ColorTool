@@ -40,6 +40,9 @@
         self.options = options;
         self.className = options[@"class"];
         self.directory = directory;
+        if([@"ios" isEqualToString:options[@"platform"]]) {
+            self.forIOS = YES;
+        }
     }
     return self;
 }
@@ -143,11 +146,11 @@
 }
 
 - (NSString *)hLineForColorWithName:(NSString *)name {
-    return [NSString stringWithFormat:@"- (NSColor *)colorFor%@;\n", name];
+    return [NSString stringWithFormat:@"- (%@ *)colorFor%@;\n", self.superclassName, name];
 }
 
 - (NSString *)mLinesForColor:(NSColor *)color withName:(NSString *)name {
-    return [NSString stringWithFormat:@"- (NSColor *)colorFor%@ {\n    return [NSColor colorWithRed:%.3f green:%.3f blue:%.3f alpha:1.0];\n}\n\n", name, color.redComponent, color.greenComponent, color.blueComponent];
+    return [NSString stringWithFormat:@"- (%@ *)colorFor%@ {\n    return [%@ colorWithRed:%.3f green:%.3f blue:%.3f alpha:1.0];\n}\n\n", self.superclassName, name, self.superclassName, color.redComponent, color.greenComponent, color.blueComponent];
 }
 
 - (void)write:(ColorList *)colorList {
