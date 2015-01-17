@@ -53,4 +53,8 @@
     [outputList writeToFile:path];
 }
 
++ (NSString *)modifiedNameForString:(NSString *)string {
+    return string;
+}
+
 @end
